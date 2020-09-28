@@ -13,6 +13,15 @@ public class Car {
     private String model;
     private int series;
 
+    public Car(String model, int series) {
+        this.model = model;
+        this.series = series;
+    }
+
+    public Car() {
+
+    }
+
     public String getModel() {
         return model;
     }
