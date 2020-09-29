@@ -6,44 +6,44 @@ import javax.persistence.*;
 @Table(name = "car")
 public class Car {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+     @Id
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
+     private Long id;
 
-    private String model;
-    private int series;
+     private String model;
+     private int series;
 
-    public Car(String model, int series) {
-        this.model = model;
+     public Car(String model, int series) {
+          this.model = model;
         this.series = series;
-    }
+     }
 
-    public Car() {
+     public Car() {
 
-    }
+     }
 
-    public String getModel() {
-        return model;
-    }
+     public String getModel() {
+         return model;
+     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
+     public void setModel(String model) {
+         this.model = model;
+     }
 
-    public int getSeries() {
-        return series;
-    }
+     public int getSeries() {
+         return series;
+     }
 
-    public void setSeries(int series) {
-        this.series = series;
-    }
+     public void setSeries(int series) {
+         this.series = series;
+     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+     public void setId(Long id) {
+         this.id = id;
+     }
 
-    public Long getId() {
-        return id;
-    }
+     public Long getId() {
+         return id;
+     }
 }
 
