@@ -34,8 +34,8 @@ public class UserDaoImp implements UserDao {
 
     @Override
     public void findUser(String model, int series) {
-        String HQL = "from User user where (user.car.model = '" + model +"' and user.car.series = '" + series +"')";
-        List result = (List) sessionFactory.getCurrentSession().createQuery(HQL).setParameter(0, model).setParameter(1, series);
-        System.out.println(result);
+        String HQL = "from User user where (user.car.model = '" + model + "' and user.car.series = '" + series + "')";
+        Query query = sessionFactory.getCurrentSession().createQuery(HQL);
+        System.out.println(query.getResultList());
     }
 }
