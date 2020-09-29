@@ -37,6 +37,8 @@ public class MainApp {
         }
 
  */
+
+        userService.findUser("car1", 1111);
         context.close();
    }
 }
