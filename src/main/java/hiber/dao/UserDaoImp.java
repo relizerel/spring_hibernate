@@ -34,7 +34,7 @@ public class UserDaoImp implements UserDao {
 
     @Override
     public void findUser(String model, int series) {
-        String HQL = "SELECT DISTINCT object(car) from Car car LEFT JOIN FETCH Car.id WHERE (car.model = ? and car.series = ?)";
+        String HQL = "from User user where (user.car.model = '" + model +"' and user.car.series = '" + series +"')";
         List result = (List) sessionFactory.getCurrentSession().createQuery(HQL).setParameter(0, model).setParameter(1, series);
         System.out.println(result);
     }
