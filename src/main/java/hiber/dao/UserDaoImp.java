@@ -32,7 +32,9 @@ public class UserDaoImp implements UserDao {
 
     @Override
     public void delete(User user) {
-      sessionFactory.getCurrentSession().delete(user);
-   }
+        sessionFactory.getCurrentSession().delete(user);
+
+    }
+
 
 }
