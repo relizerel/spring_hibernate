@@ -38,7 +38,7 @@ public class MainApp {
 
  */
 
-        userService.findUser("car1", 1111);
+        System.out.println(userService.findUser("car1", 1111));
 
         context.close();
    }

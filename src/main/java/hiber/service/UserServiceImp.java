@@ -36,8 +36,7 @@ public class UserServiceImp implements UserService {
 
     @Transactional
     @Override
-    public List<User> findUser(String model, int series) {
-        userDao.findUser(model, series);
-        return null;
+    public Object findUser(String model, int series) {
+        return userDao.findUser(model, series);
     }
 }

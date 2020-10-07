@@ -2,7 +2,7 @@ package hiber.model;
 
 import javax.persistence.*;
 
-@Entity (name = "User")
+@Entity(name = "User")
 @Table(name = "users")
 public class User {
 
@@ -19,9 +19,9 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @OneToOne (cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     @MapsId
-    @JoinColumn (name = "car_id")
+    @JoinColumn(name = "car_id")
     private Car car;
 
     public User() {}

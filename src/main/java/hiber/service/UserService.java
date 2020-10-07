@@ -8,5 +8,5 @@ public interface UserService {
     void add(User user);
     List<User> listUsers();
     void delete(User user);
-    List<User> findUser(String model, int series);
+    Object findUser(String model, int series);
 }
