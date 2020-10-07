@@ -8,5 +8,5 @@ public interface UserDao {
     void add(User user);
     List<User> listUsers();
     void delete(User user);
-    Object findUser(String model, int series);
+    User findUser(String model, int series);
 }
